@@ -12,3 +12,5 @@ with open(file_name, 'r', encoding = "utf-8") as f:
 
 	cfdist = ConditionalFreqDist()
 	anut.count_occurrences(cfdist, text)
+
+	occurrences = anut.join_occurrences(cfdist)
