@@ -1,5 +1,6 @@
 from nltk.probability import ConditionalFreqDist
 import analyzer_utility as anut
+import matplotlib.pyplot as plt
 
 file_name = input("Insira o nome do arquivo a ser analisado: ")
 
@@ -16,3 +17,8 @@ with open(file_name, 'r', encoding = "utf-8") as f:
 	occurrences = anut.join_occurrences(cfdist)
 
 	anut.process_data(occurrences)
+
+	fig, ax = plt.subplots()
+
+	ax.bar(occurrences.keys(), occurrences.values())
+	plt.show()
