@@ -14,3 +14,5 @@ with open(file_name, 'r', encoding = "utf-8") as f:
 	anut.count_occurrences(cfdist, text)
 
 	occurrences = anut.join_occurrences(cfdist)
+
+	anut.process_data(occurrences)
