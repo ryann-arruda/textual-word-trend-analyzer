@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from pathlib import *
 import os
 
-file_name = input("Insira o nome do arquivo a ser analisado: ")
+file_name = input("Enter the name of the file to be analyzed: ")
 
 text = ""
 
